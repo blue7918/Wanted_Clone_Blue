@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 위는 초기화 ----- 여기서 부터 시작*/
+
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: Apple SD Gothic Neo;
+  src: url('C:\Users\김윤형\Desktop\ASAC_웹풀스택\Wanted_CloneCoding\font\Apple+산돌고딕+Neo')
+    format('truetype');
+}
+body {
+  font-family: AppleSDGothicNeo-SemiBold, 'Apple SD Gothic Neo';
+  font-size: 9;
+  font-weight: 500;
+}
+.NavBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 43px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  padding-top: 8px;
+}
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.hamberger__button {
+  list-style: none;
+  color: white;
+  border: none;
+  background-color: white;
+  line-height: 14px;
+  outline: none;
+}
+.main__logo {
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 14px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+}
+.navbar__list li {
+  padding: 0 11.5px;
+  height: 51px;
+  line-height: 51px;
+  cursor: pointer;
+}
+.navbar__list li:hover {
+  box-shadow: 0 -2px rgb(211, 211, 211) inset;
+}
+
+.SignUpButton {
+  margin: 0;
+  background: none;
+  font-size: 14px;
+  line-height: 32px;
+  height: 34px;
+  padding: 0 14px;
+  border: none;
+}
+.ServiceButton {
+  font-size: 13px;
+  color: #666;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin-left: 15px;
+  font-weight: 400;
+}
