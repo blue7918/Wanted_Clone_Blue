@@ -128,6 +128,7 @@ table {
 }
 
 /* 위는 초기화 ----- 여기서 부터 시작*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css');
 
 a {
   text-decoration: none;
@@ -139,13 +140,26 @@ a {
   color: white;
 }
 body {
-  /* 나중에 글씨 설정해주기
-  font-family: AppleSDGothicNeo-SemiBold, 'Apple SD Gothic Neo';
-  font-size: 9;
-  font-weight: 500; */
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Pretendard JP';
+  font-feature-settings: 'ss05';
   color: #333333;
   line-height: 1.423;
 }
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+select {
+  text-transform: none;
+}
+
 .NavBar {
   /* font-family: 'pretendard jp'; 나중에 글씨 설정해주기*/
   width: 100%;
@@ -154,6 +168,15 @@ body {
   align-items: center;
   height: 43px;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .NavBar {
+    margin: 0 auto;
+    height: 50px;
+    width: 90%;
+    max-width: 1060px;
+  }
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -161,6 +184,29 @@ body {
   width: 75%;
   padding-top: 8px;
 }
+
+@media (max-width: 1252px) {
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 81%;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 8px;
+  }
+}
+
 .navbar__menu {
   display: flex;
   list-style: none;
@@ -186,6 +232,14 @@ body {
   /* -webkit-font-smoothing: antialiased; */
 }
 /* -- header 가운데 글씨부분 -- */
+@media (min-width: 992px) and (max-width: 1100px) {
+  .navbar__list {
+    margin: 0 auto;
+    display: flex;
+    flex: 1 1;
+    font-size: 11px;
+  }
+}
 .navbar__list {
   display: flex;
   list-style: none;
@@ -355,6 +409,7 @@ body {
   flex-wrap: wrap;
   width: inherit;
   margin: 0 -10px;
+  list-style: none;
 
   /* font-size: 14px;
   line-height: 1.42857143;
@@ -368,17 +423,17 @@ body {
   flex-direction: column;
   width: calc(25% - 20px);
   /* width: 250px; */
-  margin: 0 10px 50px; /*이 부분이 적용이 안됨*/
+  margin: 0 10px 50px;
 }
 .content_card {
   text-decoration: inherit;
 
-  position: relative;
+  /* position: relative; */
   /* width: 250px; */
   /* width: calc(25% - 20px); */
   width: inherit;
   /* height: auto; */
-  padding-bottom: 70%;
+  /* padding-bottom: 70%; */
   cursor: pointer;
 }
 
@@ -443,6 +498,7 @@ body {
   margin-top: 12px;
   display: flex;
   align-items: center;
+  width: 250px;
 }
 .content_card_info img {
   width: 30px;
@@ -454,7 +510,6 @@ body {
   margin-left: 10px;
   overflow: hidden;
   text-overflow: ellipsis;
-  /* white-space: nowrap; */
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -890,6 +945,9 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
+  align-self: auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 .recruit_item {
   padding: 18px 0 0;
@@ -898,12 +956,165 @@ body {
 
   display: flex;
   align-items: center;
+  align-self: auto;
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: nowrap;
+
+  box-sizing: border-box;
+}
+.recruit_item_end {
+  padding: 18px 0 0;
+  width: 25%;
+  border-right: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  box-sizing: border-box;
 }
 .recruit_item_icon {
   font-size: 32px;
   color: inherit;
   text-decoration: inherit;
 }
+.recruit_item_text {
+  height: 50px;
+  font-size: 16px;
+  padding: 6px 8px;
+  display: inline-flex;
+  justify-content: center;
+  vertical-align: middle;
+  color: inherit;
+}
+.recruit_item_endicon {
+  margin: -2px -1px 0 2px;
+}
+
+/* footer부분 */
+.FooterNavlink {
+  padding: 18px 0 65px;
+  background-color: #fff;
+  border-top: 1px solid #ececec;
+}
+.footer_navlink1 {
+  width: 90%;
+  max-width: 1060px;
+  margin: 0 auto 18px;
+  display: flex;
+}
+.footer_navlink1_1 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.navlink_logo {
+  margin-right: 50px;
+}
+.navlink_links {
+  display: flex;
+  /* align-items: center; */
+}
+.navlink_links a {
+  font-size: 15px;
+  color: #3a3a3a;
+  font-weight: 500;
+  line-height: 2.6;
+  margin-right: 45px;
+  white-space: nowrap;
+
+  text-decoration: inherit;
+}
+.footer_navlink1_2 {
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 2.6;
+}
+.footer_navlink1_2 a {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  height: 20px;
+  color: inherit;
+  text-decoration: inherit;
+}
+.footer_navlink1_2 a img {
+  margin-left: 14px;
+  vertical-align: middle;
+}
+.footer_navlink2 {
+  border-top: 1px solid #ececec;
+  padding-top: 25px;
+  max-width: 1060px;
+  width: 90%;
+  margin: 0 auto 18px;
+  display: flex;
+}
+.footer_navlink2_text {
+  float: left;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6667em;
+  color: #767676;
+  width: calc(100% -290px);
+  margin-right: 40px;
+}
+.footer_local_select {
+  position: relative;
+  width: 250px;
+  height: 36px;
+  float: left;
+}
+.footer_local_select img {
+  position: absolute;
+  left: 15px;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 17px;
+  z-index: 1;
+}
+.footer_local_select select {
+  width: 100%;
+  height: 40px;
+  background: #f2f4f7;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  line-height: 2.1;
+  color: #717171;
+  padding: 0 45px;
+  appearance: none;
+  font-weight: 500;
+}
+/* 원본
+.footer_local_select i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  line-height: 1.6;
+  transform: translateY(-50%);
+  color: #717171;
+} */
+/* 임시용 */
+.footer_local_select i {
+  position: absolute;
+  right: 15px;
+  top: 35%;
+  width: 13px;
+  height: 13px;
+  font-size: 13px;
+  line-height: 1.6;
+  transform: translateY(-50%);
+  color: #717171;
+}
+/* .icon-arrow_bottom_fill:before {
+  content: '\e97f';
+} */

@@ -1,0 +1,1010 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 위는 초기화 ----- 여기서 부터 시작*/
+
+/* header 부분 */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css');
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+.remove_background {
+  border: none;
+  background-color: white;
+  color: white;
+}
+body {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Pretendard JP';
+  font-feature-settings: 'ss05';
+  color: #333333;
+  line-height: 1.423;
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+button,
+select {
+  text-transform: none;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+*:before,
+*after {
+  box-sizing: border-box;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.SvgIconRoot {
+  /* width: 100%; */
+  display: flex;
+  align-items: inherit;
+  justify-content: inherit;
+}
+.root__svg__DKYBi {
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  font-size: inherit;
+  flex-shrink: 0;
+}
+/* 설정한 초기화 부분 */
+
+/*--header 부분--*/
+
+.NavBar {
+  /* font-family: 'pretendard jp'; 나중에 글씨 설정해주기*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 800;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0 1px 0 0 rgb(0 0 0 / 10%);
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .NavBar {
+    margin: 0 auto;
+    height: 50px;
+    width: 90%;
+    max-width: 1060px;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  max-width: 1060px;
+}
+
+@media (max-width: 1252px) {
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 81%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  align-items: center;
+}
+.hamberger__button {
+  list-style: none;
+  color: white;
+  border: none;
+  background-color: white;
+  line-height: 14px;
+  outline: none;
+}
+.main__logo {
+  /* font-family: 'icomoon' !important; 나중에 글씨 설정해주기*/
+  font-style: normal;
+  font-weight: bold;
+  font-variant: normal;
+  text-transform: none;
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 14px;
+  /* -webkit-font-smoothing: antialiased; */
+}
+/* -- header 가운데 글씨부분 -- */
+@media (min-width: 992px) and (max-width: 1100px) {
+  .navbar__list {
+    display: flex;
+    flex: 1 1;
+    font-size: 11px;
+  }
+}
+.navbar__list {
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+  height: inherit;
+  text-align: center;
+}
+.navbar__list li {
+  height: 50px; /* NavBar의 height와 navbar의 padding top 사이즈를 합쳐서 이게 hover 그림자의 위치인것임*/
+  line-height: 51px;
+  cursor: pointer;
+}
+.navbar__list li a {
+  position: relative;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+}
+
+/* -- header 오른쪽부분 -- */
+.navbar_right {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 10px 0;
+}
+.SearchButton {
+  background: none;
+  border: none;
+}
+.SignUpButton {
+  margin: 0;
+  background: none;
+  font-size: 14px;
+  line-height: 32px;
+  height: 34px;
+  padding: 0 14px;
+  border: none;
+}
+.draw_small_line {
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+  margin: 10px;
+}
+.ServiceButton {
+  font-size: 13px;
+  color: #666;
+  line-height: 30px;
+  height: 30px;
+  border: 1px solid #e1e2e3;
+  border-radius: 15px;
+  padding: 0 10px;
+  margin-left: 15px;
+  font-weight: 400;
+}
+
+/* 본문 부분 */
+
+/* 개발, 개발 전체 이런 카테고리 선택 부분 */
+.JobList {
+  background: #fff;
+  min-height: calc(100vh - 50px);
+}
+.cate_navbar_container {
+  background: #fff;
+  padding-top: 40px;
+}
+.cate_navbar_body {
+  position: relative;
+  display: flex;
+  max-width: 1060px;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .cate_navbar_body {
+    margin: 0 auto;
+    width: 87.72%;
+  }
+}
+.navbar_body_jobgroup {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.navbar_body_jobgroup_title {
+  padding-top: 3px;
+  margin-right: 15.5px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #333;
+}
+.MoreButton {
+  position: relative;
+  border: 1px solid #e1e2e3;
+  border-radius: 9999px;
+  background-color: #fff;
+  width: 26px;
+  height: 26px;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+.MoreButton svg {
+  margin-top: 7px;
+}
+.navbar_body_jobcategory {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.navbar_body_jobcategory:before {
+  content: '|';
+  font-size: 28px;
+  line-height: 29px;
+  padding: 3px 24px 0;
+  color: #ececec;
+}
+.navbar_body_jobcategory_btn {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.navbar_body_jobcategory_title {
+  padding-top: 3px;
+  margin-right: 15.5px;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #333;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+/* 그 밑에 전부 부분 */
+.JobList_Content_Wrapper {
+  position: relative;
+  max-width: 1060px;
+}
+@media (min-width: 1200px) {
+  .JobList_Content_Wrapper {
+    margin: 0 auto;
+    padding: 20px 0 80px;
+    width: 87.72%;
+  }
+}
+.filterlist_fixwith {
+  top: 50px;
+}
+
+/* -- 검색 필터 부분 -- */
+.filterlist_container {
+  margin-bottom: 25px;
+  padding-top: 10px;
+}
+.filterlist_inner_classname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.filterlist_inner_buttongroup {
+  display: flex;
+  align-items: center;
+  flex: auto;
+  justify-content: left;
+  max-width: none;
+}
+.FilterButton_Set {
+  align-items: center;
+  display: inline-flex;
+  height: 40px;
+  padding: 0 15px !important;
+  margin-bottom: 0;
+  border-radius: 5px;
+  border: 1px solid #ececec;
+  position: relative;
+  background-color: #fff;
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+}
+.filterbutton_first {
+  margin-right: 15px;
+}
+.filterd_count {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #36f;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  margin-left: 7px;
+  z-index: 1;
+}
+.filterbutton_second {
+  color: #36f !important;
+  font-weight: 600;
+  margin-right: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  letter-spacing: normal;
+}
+.filterlist_inner_space {
+  position: relative;
+  margin-left: 10px;
+}
+.FilterButton_Set > svg {
+  margin-left: 8px;
+  transition: 0.3s;
+}
+.filterlist_inner_sortbutton {
+  position: relative;
+  width: 104px;
+  height: 40px;
+}
+.filterlist_inner_sortbutton button {
+  border-radius: 4px;
+  border: 1px solid #ececec;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #000;
+  padding: 0 16px;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter_divider {
+  max-width: 1060px;
+  margin: 25px auto;
+  background-color: rgba(236, 236, 236, 0.7);
+  height: 1px;
+  border: none;
+}
+
+/* -- 태그필터 부분 -- */
+.TagFilter {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.slick-list {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+.TagListItem_TagListItem__3aCT9 {
+  position: relative;
+  height: 32px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #333;
+  border: 1px solid transparent;
+}
+.TagListItem_TagListItem__3aCT9 img {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  display: block;
+}
+.NavButton_R_Arrow {
+  /* right: 0;
+
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%); */
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e1e2e3;
+  border-radius: 9999px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* header 부분 구분선 */
+/* important 이 부분 아직 해결못함 */
+.below_divider {
+  width: inherit;
+  /* margin-bottom: 38px !important;
+  margin-left: calc(-50vw + 50%) !important; */
+  background-color: #e1e2e3;
+  height: 1px;
+  margin: 0;
+  border: none;
+  flex-shrink: 0;
+}
+/* 북마크 부분 */
+.BookMark_Section {
+  margin-bottom: 12px;
+}
+.BookMark_Section > button {
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+  color: #36f;
+}
+.BookMark_Section > button > svg {
+  width: 11px;
+  height: 16px;
+  margin-right: 8px;
+}
+.BookMark_Section > button > span {
+  font-size: 15px;
+  font-weight: 600;
+  font-stretch: normal;
+  line-height: 24px;
+  letter-spacing: normal;
+}
+.BookMark_Section > button > svg:last-of-type {
+  width: 10px;
+  margin: 0 0 0 2px;
+}
+
+/* 적극 채용 중인 회사 부분 */
+.Featured_TitleStyle {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.3px;
+  color: #333;
+  margin: 20px 0 14px;
+}
+.Featured_SliderWrapper {
+  margin: 0 0 40px 0;
+  max-width: 1060px;
+  position: relative;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+/* .Featured_SliderWrapper,
+.Featured_slider__Bnaji,
+.Featured_sliderItem__FY8yb > header {
+  z-index: 1;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  margin: 0 9px;
+}
+.Featured_SliderWrapper,
+.Featured_slider__Bnaji,
+.Featured_sliderItem__FY8yb > header > .companyBg {
+  height: 147px;
+  border-radius: 3px 3px 0 0;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+.Featured_SliderWrapper,
+.Featured_slider__Bnaji,
+.Featured_sliderItem__FY8yb > footer {
+  margin: 0 9px;
+  padding: 34px 16px 0;
+  height: 124px;
+  border: 1px solid #e1e2e3;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  position: relative;
+}
+.Featured_SliderWrapper,
+.Featured_slider__Bnaji,
+.Featured_sliderItem__FY8yb > footer > .logoCircle {
+  position: absolute;
+  top: -25px;
+  left: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  -webkit-box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+.Featured_SliderWrapper,
+.Featured_slider__Bnaji,
+.Featured_sliderItem__FY8yb > footer > h4 {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #333;
+  line-height: 1.2;
+  margin: 4px 0;
+  overflow: hidden;
+  max-height: 58px;
+}
+.Featured_SliderWrapper,
+.Featured_slider__Bnaji,
+.Featured_sliderItem__FY8yb > footer > h5 {
+  color: #999;
+  margin-top: 6px;
+}
+
+.Featured_SliderWrapper,
+.Featured_slider__Bnaji,
+.Featured_sliderItem__FY8yb > footer > h5,
+.Featured_sliderItem__FY8yb > footer > p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+} */
+
+.featured_slider_item > header {
+  z-index: 1;
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  margin: 0 9px;
+}
+
+.companyBg {
+  height: 147px;
+  border-radius: 3px 3px 0 0;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  /* -webkit-transition: all 0.5s ease-in-out; */
+  transition: all 0.5s ease-in-out;
+  /* -webkit-box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%); */
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .companyBg {
+    height: 120px;
+  }
+}
+
+.featured_slider_item > footer {
+  margin: 0 9px;
+  padding: 34px 16px 0;
+  height: 124px;
+  border: 1px solid #e1e2e3;
+  border-top: none;
+  border-radius: 0 0 3px 3px;
+  position: relative;
+}
+.logoCircle {
+  position: absolute;
+  top: -25px;
+  left: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: #f2f2f2;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0;
+  -webkit-box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+
+.featured_slider_item > footer > h4 {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+
+  position: relative;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #333;
+  line-height: 1.2;
+  margin: 4px 0;
+  overflow: hidden;
+  max-height: 58px;
+}
+
+.featured_slider_item > footer > h5 {
+  color: #999;
+  margin-top: 6px;
+}
+
+.featured_slider_item > footer > h5,
+.featured_slider_item > footer > p {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+}
+
+/* -- 밑의 계속 뜨는 '더 알아보기' 부분 -- */
+.RibbonBanner {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  background-color: #258bf7;
+  transition: 0.5s;
+  box-shadow: 0 -2px 5px rgb(0 0 0 / 5%);
+  z-index: 2;
+  height: 70px;
+}
+.clearfix::before {
+  content: ' ';
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+.ribbon_wrapper {
+  margin: 0 auto;
+  width: 90%;
+  position: relative;
+  max-width: 1060px;
+  display: flex;
+  align-items: center;
+}
+.ribbon_text {
+  margin-right: auto;
+  text-align: left;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+}
+.ribbon_more_button {
+  margin-left: auto;
+  float: right;
+  width: 118px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #258bf7;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* 리스트 부분 */
+.test_li {
+  width: inherit;
+  height: 343px;
+}
+.test_div {
+  width: inherit;
+  height: inherit;
+  border: 1px solid blue;
+}
+.joblist_joblist {
+  margin: -10px;
+  padding: 0;
+}
+.joblist_joblist li {
+  width: 25%;
+  padding: 10px;
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.joblist_jobcard a {
+  display: block;
+  height: 343px;
+}
+.joblist_jobcard header {
+  padding-bottom: 75%;
+  position: relative;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / 10%);
+}
+.bookmark_btn {
+  background: none;
+  padding: 8px 6px;
+  width: 42px;
+  height: 42px;
+  top: 0;
+  right: 0px;
+  flex-direction: row;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  border-radius: 3px;
+  position: absolute;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+.jobcard_body {
+  padding: 14px 0;
+  height: 156px;
+}
+@supports (-webkit-line-clamp: 2) and (-webkit-box-orient: vertical) {
+  .jobcard_position,
+  .jobcard_body {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+.jobcard_position,
+.jobcard_body {
+  position: relative;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  max-height: 2.4em;
+  overflow: hidden;
+  text-align: left;
+  word-break: break-word;
+}
+.jobcard_company_location,
+.jobcard_company_name {
+  font-size: 14px;
+  line-height: normal;
+  text-align: left;
+  word-break: break-word;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.jobcard_tooltip_label {
+  position: relative;
+}
+.label_veryhigh {
+  border: 1px solid #00aead;
+  border-radius: 2px;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  height: 19px;
+  line-height: 19px;
+  margin-top: 4px;
+  padding: 0 5px;
+}
+.jobcard_tooltip_content {
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  min-height: 40px;
+  height: auto;
+  line-height: normal;
+  position: absolute;
+  padding: 11px 12px;
+  background: #fff;
+  border: 1px solid #999;
+  z-index: 1;
+  display: none;
+  white-space: nowrap;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.jobcard_company_location {
+  font-weight: 400;
+  color: #999;
+}
+.addressDot {
+  margin: 0 3px;
+  top: -4px;
+  position: relative;
+}
+.reward {
+  margin-top: 10px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  word-break: break-word;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}

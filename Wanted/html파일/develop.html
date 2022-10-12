@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="keywords"
+      content="개발, 개발자, 채용, 채용공고, 해외채용, 해외취업, 이직, 원티드, wanted"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>개발 채용 정보 | 원티드</title>
+    <meta name="theme-color" content="#B5D3E7" />
+
+    <link
+      rel="shortcut icon"
+      href="https://static.wanted.co.kr/favicon/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/45d574a1cc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../css파일/reset.css" rel="stylesheet" />
+    <link href="../css파일/develop_header.css" rel="stylesheet" />
+    <link href="../css파일/develop_navbar.css" rel="stylesheet" />
+    <link href="../css파일/develop_joblist.css" rel="stylesheet" />
+    <link href="../css파일/develop_more.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css"
+    />
+  </head>
+  <body>
+    <div class="set_center headerWrapper">
+      <nav class="headerContainer">
+        <!-- 윗부분 전부 -->
+        <div class="navbarMenu">
+          <!-- 로고 부분만 -->
+          <button type="button" class="hambergerButton">
+            <img
+              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
+              style="width: 17px; height: 14px; object-fit: contain"
+            />
+          </button>
+          <!-- header 좌측 wanted 글자 -->
+          <div class="mainLogo">Wanted</div>
+        </div>
+        <!-- header 가운데 글씨 부분 -->
+        <ul class="navbarList">
+          <li><a>채용</a></li>
+          <li><a>이벤트</a></li>
+          <li><a>직군별 연봉</a></li>
+          <li><a>이력서</a></li>
+          <li><a>커뮤니티</a></li>
+          <li><a>프리랜서</a></li>
+          <li><a>AI합격예측</a></li>
+        </ul>
+        <!-- header 오른쪽 부분 -->
+        <div class="navbarRightSide">
+          <ul>
+            <button class="searchButton" type="button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="signUpButton">회원가입/로그인</button>
+          </ul>
+          <div class="drawSmallLine"></div>
+          <div class="serviceButton">기업서비스</div>
+        </div>
+      </nav>
+    </div>
+    <article role="navigation" class="categoryNavbarContainer">
+      <div class="categoryNavbarBody">
+        <button
+          class="categoryNavbarBodyField"
+          type="button"
+          aria-label="popup navigation button"
+        >
+          <span class="categoryNavbarBodyFieldText">개발</span>
+          <span
+            class="moreButton"
+            role="button"
+            aria-label="popup navigation button"
+          >
+            <svg
+              xmlns="https://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+            >
+              <path
+                fill="#767676"
+                fill-rule="nonzero"
+                d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"
+              ></path>
+            </svg>
+          </span>
+        </button>
+        <span class="categoryNavbarBodyFieldLine">|</span>
+        <button
+          type="button"
+          class="categoryNavbarBodyFieldGroup"
+          aria-label="popup navigation button"
+        >
+          <span class="categoryNavbarBodyFieldroupText">개발 전체</span>
+          <span
+            class="moreButton"
+            role="button"
+            aria-label="popup navigation button"
+          >
+            <svg
+              xmlns="https://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+            >
+              <path
+                fill="#767676"
+                fill-rule="nonzero"
+                d="M2.28 3.22a.75.75 0 0 0-1.06 1.06l4.25 4.25a.75.75 0 0 0 1.06 0l4.25-4.25a.75.75 0 0 0-1.06-1.06L6 6.94 2.28 3.22z"
+              ></path>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </article>
+    <section class="filterListWrapper"></section>
+    <section class="jobListWrapper"></section>
+    <!-- <button class="seeMoreWrapper">
+      <div class="seeMoreContainer">
+        <div>
+          <span class="seeMoreText">이제 밤새워 채용 공고 보지마세요.</span>
+        </div>
+        <div class="seeMoreButton">
+          <span>더 알아보기</span>
+        </div>
+      </div>
+    </button> -->
+
+    <!-- 밑의 계속 뜨는 '더 알아보기' 부분 
+    <button type="button" class="RibbonBanner">
+      <div class="ribbon_wrapper clearfix">
+        <div>
+          여기에 i tag 하나 있음 
+          <span class="ribbon_text">이제 밤새워 채용 공고 보지마세요.</span>
+           여기에 span>p태그 있음 
+        </div>
+        <div class="ribbon_more_button">
+          <span>더 알아보기</span>
+        </div>
+      </div>
+    </button> -->
+  </body>
+</html>
