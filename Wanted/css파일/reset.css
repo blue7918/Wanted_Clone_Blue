@@ -185,3 +185,12 @@ hr {
   align-items: center;
   justify-content: center;
 }
+.set_mwidth {
+  max-width: 66.25rem;
+  margin: 0 auto;
+}
+.section_wrapper_9in1 {
+  max-width: 1060px;
+  /* width: 90%; */
+  margin: 0 auto;
+}

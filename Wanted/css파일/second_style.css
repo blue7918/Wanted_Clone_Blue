@@ -455,18 +455,18 @@ hr {
   margin-bottom: 0;
   border-radius: 5px;
   border: 1px solid #ececec;
-  position: relative;
   background-color: #fff;
   color: #333;
   font-size: 13px;
   font-weight: 400;
+  position: relative;
 }
 .filterbutton_first {
   margin-right: 15px;
 }
 .filterd_count {
   position: absolute;
-  top: 4px;
+  top: 0;
   right: 0;
   transform: translate(50%, -50%);
   background-color: #36f;
