@@ -81,6 +81,7 @@
 @media (max-width: 1200px) {
   .filterListWrapper {
     margin: 0 auto;
+    margin-bottom: 1.563rem;
     width: 87.72%;
   }
 }
