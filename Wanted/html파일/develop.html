@@ -44,14 +44,14 @@
         <!-- 윗부분 전부 -->
         <div class="navbarMenu">
           <!-- 로고 부분만 -->
-          <button type="button" class="hambergerButton">
+          <button type="button" class="hambergerButton" >
             <img
               src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
               style="width: 17px; height: 14px; object-fit: contain"
             />
           </button>
           <!-- header 좌측 wanted 글자 -->
-          <div class="mainLogo">Wanted</div>
+          <div class="mainLogo" onclick="location.href='./wanted.html';">Wanted</div>
         </div>
         <!-- header 가운데 글씨 부분 -->
         <ul class="navbarList">
@@ -72,7 +72,7 @@
             <button class="signUpButton">회원가입/로그인</button>
           </ul>
           <div class="drawSmallLine"></div>
-          <div class="serviceButton">기업서비스</div>
+          <div class="serviceButton">기업 서비스</div>
         </div>
       </nav>
     </div>
@@ -131,284 +131,675 @@
         </button>
       </div>
     </article>
-    <section class="filterListWrapper set_mwidth">
-      <div class="filterListButtonContainer">
-        <div class="filterListButtonBox">
-          <!-- 지역 -->
-          <button type="button" class="filterButtonSet">
-            <span class="filterButtonFirst"
-              >지역
-              <span class="filterdCount">1</span>
-            </span>
-            <span class="filterButtonSecond">한국</span>
-          </button>
-          <!-- 경력 -->
-          <div class="filterListInnerSpace">
+    <div class="filterListFixWrapper">
+      <section class="filterListWrapper set_mwidth">
+        <div class="filterListButtonContainer">
+          <div class="filterListButtonBox">
+            <!-- 지역 -->
             <button type="button" class="filterButtonSet">
-              <span class="filterButtonFirst">경력</span>
-              <span class="filterButtonSecond">전체</span>
-              <svg
-                width="8"
-                height="7"
-                viewBox="0 0 8 7"
-                fill="none"
-                xmlns="https://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
-                  fill="#333333"
-                ></path>
-              </svg>
+              <span class="filterButtonFirst"
+                >지역
+                <span class="filterdCount">1</span>
+              </span>
+              <span class="filterButtonSecond">한국</span>
             </button>
-          </div>
-          <!-- 기술스택 -->
-          <div class="filterListInnerSpace">
-            <button type="button" class="filterButtonSet">
-              <span class="filterButtonFirst">기술스택</span>
-              <span class="filterButtonSecond"></span>
-              <svg
-                width="8"
-                height="7"
-                viewBox="0 0 8 7"
-                fill="none"
-                xmlns="https://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
-                  fill="#333333"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <!-- 어떤 순서로 검색할지 filter -->
-        <div class="filterListCustomButton">
-          <button class="" type="button">
-            응답률순
-            <svg
-              width="8"
-              height="7"
-              viewBox="0 0 8 7"
-              fill="none"
-              xmlns="https://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
-                fill="#333333"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <section class="tagFilter">
-        <div>
-          <div class="tagList">
-            <div class="tagListTrack" style="width: 2772px; opacity: 1">
-              <!-- 2772px = 173.25rem -->
-              <div
-                data-index="0"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="false"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(242, 251, 245)"
-                  >
-                    연봉이 최고의 복지
-                    <img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                      alt="연봉이 최고의 복지"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div
-                data-index="1"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="false"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(243, 249, 254)"
-                  >
-                    재택근무<img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F5d873f3a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                      alt="재택근무"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div
-                data-index="2"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="false"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(243, 242, 251)"
-                  >
-                    퇴사율 10% 이하<img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F7d3cdb3c-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                      alt="퇴사율 10% 이하"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div
-                data-index="3"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="false"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(246, 248, 238)"
-                  >
-                    급성장 중<img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F37dacf86-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                      alt="급성장 중"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div
-                data-index="4"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="false"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(247, 242, 249)"
-                  >
-                    병역특례<img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F6eda33d2-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
-                      alt="병역특례"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div
-                data-index="5"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="true"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(238, 250, 249)"
-                  >
-                    50인 이하️<img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F3a965d18-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
-                      alt="50인 이하️"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div
-                data-index="6"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="true"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(239, 241, 251)"
-                  >
-                    50인 이상️<img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4cec3244-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
-                      alt="50인 이상️"
-                    />
-                  </button>
-                </div>
-              </div>
-              <div
-                data-index="7"
-                class="tagListSlide"
-                tabindex="-1"
-                aria-hidden="true"
-                style="outline: none"
-              >
-                <div>
-                  <button
-                    type="button"
-                    class="tagListItem"
-                    style="background: rgb(242, 251, 245)"
-                  >
-                    업력 5년 이상<img
-                      src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F45bb9794-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
-                      alt="업력 5년 이상"
-                    />
-                  </button>
-                </div>
-              </div>
-              <button
-                type="button"
-                class="navbarFilterListArrowR set_center"
-                aria-label="next button"
-              >
-                <span class="SvgIconRoot">
-                  <svg class="root__svg__DKYBi" viewBox="0 0 18 18">
-                    <path
-                      d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"
-                    ></path>
-                  </svg>
-                </span>
+            <!-- 경력 -->
+            <div class="filterListInnerSpace">
+              <button type="button" class="filterButtonSet">
+                <span class="filterButtonFirst">경력</span>
+                <span class="filterButtonSecond">전체</span>
+                <svg
+                  width="8"
+                  height="7"
+                  viewBox="0 0 8 7"
+                  fill="none"
+                  xmlns="https://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
+                    fill="#333333"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <!-- 기술스택 -->
+            <div class="filterListInnerSpace">
+              <button type="button" class="filterButtonSet">
+                <span class="filterButtonFirst">기술스택</span>
+                <span class="filterButtonSecond"></span>
+                <svg
+                  width="8"
+                  height="7"
+                  viewBox="0 0 8 7"
+                  fill="none"
+                  xmlns="https://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
+                    fill="#333333"
+                  ></path>
+                </svg>
               </button>
             </div>
           </div>
+          <!-- 어떤 순서로 검색할지 filter -->
+          <div class="filterListCustomButton">
+            <button class="" type="button">
+              응답률순
+              <svg
+                width="8"
+                height="7"
+                viewBox="0 0 8 7"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.33334 0.494202C7.85691 0.494202 8.14842 1.1611 7.82205 1.61224L4.50038 6.20371C4.25071 6.54882 3.77503 6.54971 3.5243 6.20554L0.179295 1.61408C-0.149094 1.16332 0.14211 0.494202 0.666672 0.494202H7.33334Z"
+                  fill="#333333"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
+        <section class="tagFilter">
+          <div>
+            <div class="tagList">
+              <div class="tagListTrack" style="width: 2772px; opacity: 1">
+                <!-- 2772px = 173.25rem -->
+                <div
+                  data-index="0"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="false"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(242, 251, 245)"
+                    >
+                      연봉이 최고의 복지
+                      <img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F634f02e0-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                        alt="연봉이 최고의 복지"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  data-index="1"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="false"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(243, 249, 254)"
+                    >
+                      재택근무<img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F5d873f3a-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                        alt="재택근무"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  data-index="2"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="false"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(243, 242, 251)"
+                    >
+                      퇴사율 10% 이하<img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F7d3cdb3c-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                        alt="퇴사율 10% 이하"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  data-index="3"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="false"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(246, 248, 238)"
+                    >
+                      급성장 중<img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F37dacf86-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                        alt="급성장 중"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  data-index="4"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="false"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(247, 242, 249)"
+                    >
+                      병역특례<img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F6eda33d2-9f6e-11ec-b909-0242ac120002.png&amp;w=50&amp;q=75"
+                        alt="병역특례"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  data-index="5"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(238, 250, 249)"
+                    >
+                      50인 이하️<img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F3a965d18-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                        alt="50인 이하️"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  data-index="6"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(239, 241, 251)"
+                    >
+                      50인 이상️<img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F4cec3244-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                        alt="50인 이상️"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <div
+                  data-index="7"
+                  class="tagListSlide"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  style="outline: none"
+                >
+                  <div>
+                    <button
+                      type="button"
+                      class="tagListItem"
+                      style="background: rgb(242, 251, 245)"
+                    >
+                      업력 5년 이상<img
+                        src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ftags%2F45bb9794-c524-11ec-901c-acde48001122.png&amp;w=50&amp;q=75"
+                        alt="업력 5년 이상"
+                      />
+                    </button>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="navbarFilterListArrowR set_center"
+                  aria-label="next button"
+                >
+                  <span class="SvgIconRoot">
+                    <svg class="root__svg__DKYBi" viewBox="0 0 18 18">
+                      <path
+                        d="m11.955 9-5.978 5.977a.563.563 0 0 0 .796.796l6.375-6.375a.563.563 0 0 0 0-.796L6.773 2.227a.562.562 0 1 0-.796.796L11.955 9z"
+                      ></path>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
+    </div>
+
+    <section class="jobListWrapper set_mwidth">
+      <div class="jobListBookmarkContainer">
+        <div class="make38pxSpace"></div>
+        <button type="button">
+          <svg width="13" height="17" viewBox="0 0 13 17" style="color: #36f">
+            <defs>
+              <path
+                id="bookmarkIconFill"
+                d="M6.25 13.21L.905 16.22c-.403.228-.905-.06-.905-.517V.596C0 .267.27 0 .605 0h11.29c.334 0 .605.267.605.596v15.107c0 .458-.502.745-.905.518L6.25 13.209z"
+              ></path>
+            </defs>
+            <g fill="none" fill-rule="evenodd" transform="translate(.188)">
+              <use fill="currentColor" xlink:href="#bookmarkIconFill"></use>
+            </g>
+          </svg>
+          <span>북마크 모아보기</span>
+          <svg width="12" height="12" viewBox="0 0 12 12">
+            <path
+              fill="currentColor"
+              d="M4.22 9.72a.75.75 0 001.06 1.06l4.25-4.25a.75.75 0 000-1.06L5.28 1.22a.75.75 0 00-1.06 1.06L7.94 6 4.22 9.72z"
+            ></path>
+          </svg>
+        </button>
+        <h3 class="featuredCompanyTitle set_mwidth">적극 채용 중인 회사</h3>
+        <ul class="featuredCompanyList">
+          <li class="featuredCompanyListItem">
+            <header>
+              <div
+                class="featuredCompanyListItemImg undefined"
+                style="
+                  background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F216%2Fpdgjch6eg5ajfdfm__400_400.jpg&amp;w=400&amp;q=75');
+                "
+              ></div>
+            </header>
+            <footer>
+              <div
+                class="featuredCompanyListItemLogo"
+                style="
+                  background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.799382a7.jpg&amp;w=100&amp;q=75');
+                  background-size: contain;
+                  background-color: rgb(255, 255, 255);
+                "
+              ></div>
+              <h4>화해(버드뷰)</h4>
+              <h5>16개 포지션</h5>
+            </footer>
+          </li>
+          <li class="featuredCompanyListItem">
+            <header>
+              <div
+                class="featuredCompanyListItemImg undefined"
+                style="
+                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F79%2Fno3ey0e5mjbismfq__400_400.jpg&amp;w=400&amp;q=75');
+                "
+              ></div>
+            </header>
+            <footer>
+              <div
+                class="featuredCompanyListItemLogo"
+                style="
+                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.cc473dbf.jpg&amp;w=100&amp;q=75');
+                background-size: contain;
+                background-color: rgb(255, 255, 255);
+                "
+              ></div>
+              <h4>원티드랩</h4>
+              <h5>19개 포지션</h5>
+            </footer>
+          </li>
+          <li class="featuredCompanyListItem">
+            <header>
+              <div
+                class="featuredCompanyListItemImg undefined"
+                style="
+                  background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F25170%2Frirnjanpvegybb4j__400_400.jpg&amp;w=400&amp;q=75');
+                "
+              ></div>
+            </header>
+            <footer>
+              <div
+                class="featuredCompanyListItemLogo"
+                style="
+                  background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.55b3251a.png&amp;w=100&amp;q=75');
+                  background-size: contain;
+                  background-color: rgb(255, 255, 255);
+                "
+              ></div>
+              <h4>서울옥션</h4>
+              <h5>1개 포지션</h5>
+            </footer>
+          </li>
+          <li class="featuredCompanyListItem">
+            <header>
+              <div
+                class="featuredCompanyListItemImg undefined"
+                style="
+                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F23165%2Fivihugmapkafh5ao__400_400.jpg&amp;w=400&amp;q=75');
+                "
+              ></div>
+            </header>
+            <footer>
+              <div
+                class="featuredCompanyListItemLogo"
+                style="
+                  background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.620261a9.jpg&amp;w=100&amp;q=75');
+                  background-size: contain;
+                  background-color: rgb(255, 255, 255);
+              "
+              ></div>
+              <h4>더블유클럽</h4>
+              <h5>15개 포지션</h5>
+            </footer>
+          </li>
+          <li class="featuredCompanyListItem">
+            <header>
+              <div
+                class="featuredCompanyListItemImg undefined"
+                style="
+                background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F34395%2Fyybet3hslji7eetx__400_400.jpg&amp;w=400&amp;q=75');
+                "
+              ></div>
+            </header>
+            <footer>
+              <div
+                class="featuredCompanyListItemLogo"
+                style="
+                  background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fwdes%2F0_5.0b63b47f.jpg&amp;w=100&amp;q=75');
+                  background-size: contain;
+                  background-color: rgb(255, 255, 255);
+                "
+              ></div>
+              <h4>에스비솔루션</h4>
+              <h5>1개 포지션</h5>
+            </footer>
+          </li>
+        </ul>
+      </div>
+      <ul class="jobListItemContainer">
+        <li class="jobListItem">
+          <header
+          style="
+            background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              스마트컨트랙트 개발자 (Golang)
+            </div>
+            <div class="jobListItemName">온블록</div>
+            <button class="jobListItemTipLabel" type="button">
+              <div class="TipLabelVeryHigh">
+                <span>응답률 매우 높음</span>
+              </div>
+              <div class="jobListItemTipContent">
+                지원 후 응답받을 확률이 95% 이상입니다.
+              </div>
+            </button>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+            background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              스마트컨트랙트 개발자 (Golang)
+            </div>
+            <div class="jobListItemName">온블록</div>
+            <button class="jobListItemTipLabel" type="button">
+              <div class="TipLabelVeryHigh">
+                <span>응답률 매우 높음</span>
+              </div>
+              <div class="jobListItemTipContent">
+                지원 후 응답받을 확률이 95% 이상입니다.
+              </div>
+            </button>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+            background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              스마트컨트랙트 개발자 (Golang)
+            </div>
+            <div class="jobListItemName">온블록</div>
+            <button class="jobListItemTipLabel" type="button">
+              <div class="TipLabelVeryHigh">
+                <span>응답률 매우 높음</span>
+              </div>
+              <div class="jobListItemTipContent">
+                지원 후 응답받을 확률이 95% 이상입니다.
+              </div>
+            </button>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+            background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              스마트컨트랙트 개발자 (Golang)
+            </div>
+            <div class="jobListItemName">온블록</div>
+            <button class="jobListItemTipLabel" type="button">
+              <div class="TipLabelVeryHigh">
+                <span>응답률 매우 높음</span>
+              </div>
+              <div class="jobListItemTipContent">
+                지원 후 응답받을 확률이 95% 이상입니다.
+              </div>
+            </button>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+            background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              스마트컨트랙트 개발자 (Golang)
+            </div>
+            <div class="jobListItemName">온블록</div>
+            <button class="jobListItemTipLabel" type="button">
+              <div class="TipLabelVeryHigh">
+                <span>응답률 매우 높음</span>
+              </div>
+              <div class="jobListItemTipContent">
+                지원 후 응답받을 확률이 95% 이상입니다.
+              </div>
+            </button>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+      </ul>
+      </div>
     </section>
-    <div id="horizontal_line"></div>
-    <hr class="horizontal_line_test" />
-
-    <section class="jobListWrapper"></section>
-
+    <!-- 밑의 계속 뜨는 '더 알아보기' 부분 -->
     <!-- <button class="seeMoreWrapper">
       <div class="seeMoreContainer">
         <div>
           <span class="seeMoreText">이제 밤새워 채용 공고 보지마세요.</span>
         </div>
         <div class="seeMoreButton">
-          <span>더 알아보기</span>
-        </div>
-      </div>
-    </button> -->
-
-    <!-- 밑의 계속 뜨는 '더 알아보기' 부분 
-    <button type="button" class="RibbonBanner">
-      <div class="ribbon_wrapper clearfix">
-        <div>
-          여기에 i tag 하나 있음 
-          <span class="ribbon_text">이제 밤새워 채용 공고 보지마세요.</span>
-           여기에 span>p태그 있음 
-        </div>
-        <div class="ribbon_more_button">
           <span>더 알아보기</span>
         </div>
       </div>

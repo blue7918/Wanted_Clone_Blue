@@ -183,8 +183,8 @@ select {
   align-items: center;
   width: 75%;
   padding-top: 8px;
+  max-width: 1060px;
 }
-
 @media (max-width: 1252px) {
   .navbar {
     margin: 0 auto;
@@ -195,7 +195,6 @@ select {
     padding-top: 8px;
   }
 }
-
 @media (min-width: 992px) and (max-width: 1199px) {
   .navbar {
     margin: 0 auto;
@@ -205,6 +204,37 @@ select {
     width: 100%;
     padding-top: 8px;
   }
+}
+
+.mainCategoryList {
+  display: none;
+  position: absolute;
+  border-left: 0.063rem solid #f7f9fa;
+  border-right: 0.063rem solid #f7f9fa;
+  height: calc(100vh - 3.125rem);
+  width: 13.75rem;
+  background-color: #fff;
+  overflow-y: auto;
+  bottom: 43px;
+}
+.mainCategoryList li {
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  flex: 1 1;
+  padding: 0 1.25rem;
+  width: 100%;
+}
+.mainCategoryList li em {
+  font-size: 0.813rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  color: #333;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .navbar__menu {
@@ -219,6 +249,11 @@ select {
   background-color: white;
   line-height: 14px;
   outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.hamberger__button:hover .mainCategoryList {
+  display: block;
 }
 .main__logo {
   /* font-family: 'icomoon' !important; 나중에 글씨 설정해주기*/
@@ -229,7 +264,7 @@ select {
   margin-left: 10px;
   font-size: 20px;
   line-height: 14px;
-  /* -webkit-font-smoothing: antialiased; */
+  cursor: pointer;
 }
 /* -- header 가운데 글씨부분 -- */
 @media (min-width: 992px) and (max-width: 1100px) {

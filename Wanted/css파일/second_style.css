@@ -991,12 +991,12 @@ hr {
   font-weight: 400;
   color: #999;
 }
-.addressDot {
+.jobListItemDot {
   margin: 0 3px;
   top: -4px;
   position: relative;
 }
-.reward {
+.jobListItemReward {
   margin-top: 10px;
   color: #333;
   font-size: 14px;
