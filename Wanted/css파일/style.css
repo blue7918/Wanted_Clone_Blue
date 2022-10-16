@@ -1155,30 +1155,27 @@ select {
 /* 회원가입 모달창 부분 */
 /* 배경 부분으로 하려고 했던 css */
 .signInMalBackground {
-  position: fixed;
   width: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 3;
-  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  /* color: rgba(0, 0, 0, 0.5); */
+  color: blue;
+  background-color: red;
 }
 .signInMal {
   width: 25rem;
   border-radius: 5px;
   background-color: #fff;
   position: absolute;
+  top: 50%;
+  left: 50%;
   overflow: hidden;
 }
 @media (min-width: 1200px) {
   .signInMal {
-    top: 50%;
-    left: 50%;
     max-width: 31.25rem;
     max-height: calc(100vh - 9.375rem);
     transform: translate(-50%, -50%);
-    z-index: 5;
+    /* z-index: 5; */
   }
 }
 .signInMalHead {
@@ -1231,7 +1228,7 @@ select {
 .signInMalBodyInputPanel {
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  /* z-index: 1; */
 }
 .InputPanelEmailBox {
   padding-bottom: 1.3rem;
@@ -1244,14 +1241,18 @@ select {
 #email {
   margin-top: 0.688rem;
   width: 20.5rem;
-  height: 3.125rem;
+  height: 2.9rem;
   padding-right: 0.938rem;
   padding-left: 0.938rem;
   border-radius: 0.313rem;
   border: 0.063rem solid #e1e2e3;
   background-color: #fff;
   font-size: 0.938rem;
-  color: #333;
+  color: #e1e2e3;
+}
+input::placeholder {
+  color: rgb(177, 170, 180);
+  font-size: 0.938rem;
 }
 .InputPanelButtonContainer {
   display: flex;
@@ -1284,9 +1285,10 @@ select {
 }
 .InputPanelSocialLogin {
   text-align: center;
-  color: #767676;
+  color: rgb(130, 130, 130);
   margin-bottom: 1.063rem;
   font-size: 0.875rem;
+  font-weight: 400;
 }
 .InputPanelSocialButtonContainer {
   width: 100%;
@@ -1334,4 +1336,8 @@ select {
   font-size: 12px;
   line-height: 18px;
   color: #999;
+}
+.loginModalAnchor {
+  color: #3336ff;
+  text-decoration: underline;
 }
