@@ -1,0 +1,446 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-jp.css');
+
+.jobDetailBody {
+  margin: 0 auto;
+  padding: 20px 0 80px;
+}
+.jobDetailWrapper {
+  display: inline-block;
+  width: calc(100% - 360px);
+  vertical-align: top;
+}
+.jobDetailImage {
+  width: 700px;
+  height: 490px;
+}
+.jobDetailImage img {
+  width: 700px;
+  height: 490px;
+  border-radius: 4px;
+  outline: 1px solid rgba(0, 0, 0, 0.05);
+}
+.jobDetailHeader {
+  margin: 40px 0 30px;
+}
+.jobDetailHeader > h2 {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+.jobDetailCompany > div > h6 {
+  color: #333;
+  line-height: 1.4;
+  font-size: 14px;
+  font-weight: 600;
+  width: 49px;
+}
+.jobDetailCompany {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.respondLevelBox {
+  height: 17px;
+  margin: 0 10px;
+  position: relative;
+}
+.respondLevelBox:hover .respondLevelPopup {
+  display: block;
+}
+.respondLevel {
+  border: 1px solid #36f;
+  color: #36f;
+  border-radius: 2px;
+  background-color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  height: inherit;
+  line-height: 19px;
+  padding: 0 5px;
+}
+.respondLevel > span {
+  line-height: 19px;
+}
+.respondLevelPopup {
+  display: none;
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  height: fit-content;
+  line-height: normal;
+  position: absolute;
+  padding: 11px 12px;
+  background: #fff;
+  border: 1px solid #999;
+  white-space: nowrap;
+  top: calc(100% + 4px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.jobDetailCompanyLocation {
+  padding: 0 10px;
+  position: relative;
+  white-space: nowrap;
+  /* color: rgb(185, 185, 185); */
+  color: #999;
+  display: inline-block;
+  font-weight: 400;
+}
+.jobDetailCompanySmallLine {
+  width: 1px;
+  height: 10px;
+  background-color: #e1e2e3;
+  padding-top: 6px;
+}
+.jobDetailHeaderDot {
+  margin: 0 2px;
+  top: -3px;
+  position: relative;
+}
+.jobDetailTagList {
+  margin-top: 20px;
+}
+.jobDetailTagList > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.jobDetailTagList > ul > li {
+  display: inline-block;
+}
+.jobDetailTagList > ul > li > a {
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  padding: 9px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+  color: #333;
+  background-color: #f3f5f8;
+  border-radius: 25px;
+}
+.jobContentDescription {
+  margin: 2.5rem 0 60px 0;
+  padding-right: 1.25rem;
+}
+.jobContentDescription p {
+  color: #333;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+.jobContentDescription h6 {
+  margin: 1.25rem 0 0;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.jobContentDescriptionSkillsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 0.625rem 0.5rem;
+  gap: 0.625rem 0.5rem;
+  margin-top: 0.313rem;
+}
+.jobContentSkillItem {
+  background-color: #e4f4ec;
+  border-radius: 1.25rem;
+  padding: 0.563rem 0.875rem;
+  font-size: 0.75rem;
+  line-height: 0.9rem;
+  font-weight: 600;
+}
+.jobContentDivider {
+  border: 0;
+  border-top: 0.063rem solid #eee;
+}
+.jobWorkPlace {
+  margin: 1.25rem 0 2.5rem 0;
+}
+.jobWorkPlace > div {
+  margin-bottom: 20px;
+  display: flex;
+}
+.jobWorkPlaceHeader {
+  color: #999;
+  width: 80px;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  vertical-align: text-top;
+}
+.jobWorkPlaceBody {
+  color: #333;
+  width: calc(100% - 80px);
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  vertical-align: text-top;
+}
+.jobWorkPlaceMap {
+  display: block;
+  width: 700px;
+  height: 254px;
+}
+.jobWorkPlaceMap > iframe {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-position: 50%;
+  height: 100%;
+}
+.jobCompanyInfo {
+  border-radius: 0.188rem;
+  border: 0.063rem solid #e1e2e3;
+  padding: 1.25rem;
+  margin: 5rem 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.jobCompanyLeft {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: left;
+}
+.jobCompanyLogo {
+  background-position: 50%;
+  background-size: contain;
+  width: 3.125rem;
+  height: 3.125rem;
+  box-shadow: 0 0 0.063rem 0 rgb(0 0 0 / 10%);
+  margin-right: 0.938rem;
+  background-repeat: no-repeat;
+}
+.jobCompanyLeft h5 {
+  color: #333;
+  font-size: 0.938rem;
+  font-weight: 600;
+  margin: 0 0 0.313rem;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  padding-right: 0.625rem;
+}
+.jobCompanyLeft h6 {
+  color: #999;
+  font-size: 0.938rem;
+  font-weight: 600;
+  margin: 0;
+  padding-right: 0.625rem;
+}
+.jobCompanyFollowButton {
+  border: 0.063rem solid #e1e2e3;
+  height: 2.5rem;
+  color: #36f;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  min-width: 4rem;
+  padding: 0 1.688rem;
+  border-radius: 1.563rem;
+  line-height: normal;
+  cursor: pointer;
+}
+.jobCompanyFollowButton > span {
+  width: 100%;
+  font-size: 0.938rem;
+  font-weight: 700;
+  color: inherit;
+}
+.jobWarning {
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #f3f5f8;
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+}
+.jobWarningContent {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.jobWarningContent h5 {
+  margin: 0 1.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.375rem;
+  color: #333;
+}
+.jobWarningContent svg {
+  color: #333;
+}
+
+.jobProcessContainer {
+  top: 4.375rem;
+  position: fixed;
+  right: calc((100% - 66.25rem) / 2);
+  width: 18.625rem;
+  height: 17.125rem;
+  border: 0.063rem solid #e1e2e3;
+  background-color: #fff;
+  padding: 1.5rem 1.25rem;
+  border-radius: 0.188rem;
+}
+.jobProcessRewardContainer > h3 {
+  font-size: 0.938rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+}
+.jobProcessRewardContainer > ul {
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+.jobProcessRewardContainer > ul > li {
+  float: left;
+  width: 50%;
+  letter-spacing: normal;
+  text-align: left;
+}
+.jobProcessShare {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #fff;
+  border-radius: 1.25rem;
+  border: 0.063rem solid #e1e2e3;
+}
+.jobProcessShare > svg {
+  position: relative;
+  left: -0.063rem;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.jobProcessRewardContainer ul > li > h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+.jobProcessRewardContainer ul > li > p {
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+}
+.jobProcessBookmarkButton {
+  margin-bottom: 10px;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #fff;
+  border: 1px solid #36f;
+  font-size: 16px;
+  font-weight: 600;
+  color: #36f;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+}
+.jobProcessBookmarkButton > svg {
+  margin-right: 8px;
+}
+.jobProcessApplyButton {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #36f;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: normal;
+  color: #fff;
+  text-align: center;
+}
+.jobProcessReactions {
+  margin: 24px 0 0;
+  height: 30px;
+}
+.jobProcessReactionsLike {
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #e1e2e3;
+  margin-right: 12px;
+  padding: 0 15px;
+  float: left;
+}
+.jobProcessReactionsLike i {
+  font-size: 16px;
+  color: #dbdbdb;
+  margin-right: 10px;
+  top: 0.5px;
+}
+.jobProcessReactionsLike > span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333;
+  position: relative;
+  top: -1px;
+}
+.jobProcessReactionsAvatar > ul > li {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  float: left;
+  position: relative;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-left: -10px;
+  z-index: 1;
+}
+.jobProcessReactionsAvatar > ul > li:first-of-type {
+  z-index: 2;
+  margin-left: 0;
+}
+.jobProcessReactionsAvatar > ul > li:last-of-type {
+  z-index: 0;
+}
+
+.jobAssociated {
+  margin: 5rem 0 0;
+}
+.jobAssociatedTitle {
+  margin: 0 0 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  line-height: normal;
+}
+.seeMoreContainer i {
+  color: #fff;
+  font-size: 16.5px;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -84,6 +84,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -166,6 +167,16 @@ button {
 hr {
   box-sizing: content-box;
   height: 0;
+}
+a,
+a:active,
+a:hover,
+a:visited {
+  color: inherit;
+}
+a {
+  text-decoration: inherit;
+  cursor: pointer;
 }
 
 .SvgIconRoot {

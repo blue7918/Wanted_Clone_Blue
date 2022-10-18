@@ -1,0 +1,120 @@
+.FooterNavlink {
+  padding: 18px 0 65px;
+  background-color: #fff;
+  border-top: 1px solid #ececec;
+}
+.footer_navlink1 {
+  width: 90%;
+  max-width: 1060px;
+  margin: 0 auto 18px;
+  display: flex;
+}
+.footer_navlink1_1 {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+.navlink_logo {
+  margin-right: 50px;
+}
+.navlink_links {
+  display: flex;
+  /* align-items: center; */
+}
+.navlink_links a {
+  font-size: 15px;
+  color: #3a3a3a;
+  font-weight: 500;
+  line-height: 2.6;
+  margin-right: 45px;
+  white-space: nowrap;
+
+  text-decoration: inherit;
+}
+.footer_navlink1_2 {
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 2.6;
+}
+.footer_navlink1_2 a {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  float: left;
+  height: 20px;
+  color: inherit;
+  text-decoration: inherit;
+}
+.footer_navlink1_2 a img {
+  margin-left: 14px;
+  vertical-align: middle;
+}
+.footer_navlink2 {
+  border-top: 1px solid #ececec;
+  padding-top: 25px;
+  max-width: 1060px;
+  width: 90%;
+  margin: 0 auto 18px;
+  display: flex;
+}
+.footer_navlink2_text {
+  float: left;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6667em;
+  color: #767676;
+  width: calc(100% -290px);
+  margin-right: 40px;
+}
+.footer_local_select {
+  position: relative;
+  width: 250px;
+  height: 36px;
+  float: left;
+}
+.footer_local_select img {
+  position: absolute;
+  left: 15px;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 17px;
+  z-index: 1;
+}
+.footer_local_select select {
+  width: 100%;
+  height: 40px;
+  background: #f2f4f7;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  line-height: 2.1;
+  color: #717171;
+  padding: 0 45px;
+  appearance: none;
+  font-weight: 500;
+}
+/* 원본
+.footer_local_select i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  line-height: 1.6;
+  transform: translateY(-50%);
+  color: #717171;
+} */
+/* 임시용 */
+.footer_local_select i {
+  position: absolute;
+  right: 15px;
+  top: 35%;
+  width: 13px;
+  height: 13px;
+  font-size: 13px;
+  line-height: 1.6;
+  transform: translateY(-50%);
+  color: #717171;
+}

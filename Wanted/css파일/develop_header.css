@@ -127,7 +127,7 @@
   border: none;
 }
 .drawSmallLine {
-  width: 1px;
+  width: 0.5px;
   height: 10px;
   background-color: #e1e2e3;
   margin: 10px;

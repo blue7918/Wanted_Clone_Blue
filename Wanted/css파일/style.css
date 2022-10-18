@@ -1155,12 +1155,15 @@ select {
 /* 회원가입 모달창 부분 */
 /* 배경 부분으로 하려고 했던 css */
 .signInMalBackground {
+  display: none;
+  position: fixed;
   width: 100%;
   height: 100%;
-  color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #signin_mal {
-  /* display: none; */
   width: 25rem;
   border-radius: 5px;
   background-color: #fff;
@@ -1266,6 +1269,9 @@ input::placeholder {
   color: inherit;
   font-size: 1rem;
   font-weight: 600;
+}
+.InputPanelButtonContainer input[type='submit'] {
+  font-family: FontAwesome;
 }
 .InputPanelOrSocial {
   display: block;
