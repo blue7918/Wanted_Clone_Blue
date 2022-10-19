@@ -2,7 +2,8 @@
 
 .jobDetailBody {
   margin: 0 auto;
-  padding: 20px 0 80px;
+  padding: 70px 0 80px;
+  display: flex;
 }
 .jobDetailWrapper {
   display: inline-block;
@@ -289,9 +290,12 @@
 }
 
 .jobProcessContainer {
+  margin-left: 2rem;
+  margin-bottom: 1.85rem;
   top: 4.375rem;
-  position: fixed;
-  right: calc((100% - 66.25rem) / 2);
+  position: sticky;
+  /* right: calc((100% - 66.25rem) / 2); */
+  /* right: 16.875rem; */
   width: 18.625rem;
   height: 17.125rem;
   border: 0.063rem solid #e1e2e3;
@@ -333,26 +337,26 @@
   height: 1.125rem;
 }
 .jobProcessRewardContainer ul > li > h4 {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #999;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   line-height: 1.2;
 }
 .jobProcessRewardContainer ul > li > p {
-  font-size: 15px;
+  font-size: 0.938rem;
   color: #333;
   font-weight: 600;
 }
 .jobProcessBookmarkButton {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   align-items: center;
   width: 100%;
-  height: 50px;
-  border-radius: 25px;
+  height: 3.125rem;
+  border-radius: 1.563rem;
   background-color: #fff;
-  border: 1px solid #36f;
-  font-size: 16px;
+  border: 0.063rem solid #36f;
+  font-size: 1rem;
   font-weight: 600;
   color: #36f;
   text-align: center;
@@ -364,59 +368,59 @@
   align-content: stretch;
 }
 .jobProcessBookmarkButton > svg {
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 .jobProcessApplyButton {
   width: 100%;
-  height: 50px;
-  border-radius: 25px;
+  height: 3.125rem;
+  border-radius: 1.563rem;
   background-color: #36f;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   letter-spacing: normal;
   color: #fff;
   text-align: center;
 }
 .jobProcessReactions {
-  margin: 24px 0 0;
-  height: 30px;
+  margin: 1.5rem 0 0;
+  height: 1.875rem;
 }
 .jobProcessReactionsLike {
-  height: 30px;
-  border-radius: 15px;
+  height: 1.875rem;
+  border-radius: 0.938rem;
   border: 1px solid #e1e2e3;
-  margin-right: 12px;
-  padding: 0 15px;
+  margin-right: 0.75rem;
+  padding: 0 0.938rem;
   float: left;
 }
 .jobProcessReactionsLike i {
-  font-size: 16px;
+  font-size: 1rem;
   color: #dbdbdb;
-  margin-right: 10px;
-  top: 0.5px;
+  margin-right: 0.625rem;
+  top: 00.031rem;
 }
 .jobProcessReactionsLike > span {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 1.875ren;
   letter-spacing: normal;
   text-align: left;
   color: #333;
   position: relative;
-  top: -1px;
+  top: -0.063px;
 }
 .jobProcessReactionsAvatar > ul > li {
-  width: 26px;
-  height: 26px;
+  width: 1.625rem;
+  height: 1.625rem;
   border-radius: 50%;
-  border: 1px solid #fff;
+  border: 0.063rem solid #fff;
   float: left;
   position: relative;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
 
-  margin-left: -10px;
+  margin-left: -0.625rem;
   z-index: 1;
 }
 .jobProcessReactionsAvatar > ul > li:first-of-type {
@@ -428,7 +432,8 @@
 }
 
 .jobAssociated {
-  margin: 5rem 0 0;
+  margin: 0 auto;
+  margin-top: 5rem;
 }
 .jobAssociatedTitle {
   margin: 0 0 1.25rem;
@@ -439,8 +444,8 @@
 }
 .seeMoreContainer i {
   color: #fff;
-  font-size: 16.5px;
-  margin-right: 15px;
+  font-size: 1.031rem;
+  margin-right: 0.938rem;
   display: inline-block;
   vertical-align: middle;
 }

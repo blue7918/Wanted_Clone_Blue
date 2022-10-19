@@ -215,7 +215,6 @@ select {
   width: 13.75rem;
   background-color: #fff;
   /* overflow-y: auto; */
-  bottom: -0.12rem;
   z-index: 3;
 }
 .mainCategoryList li {
@@ -225,6 +224,7 @@ select {
   flex: 1 1;
   padding: 0 1.25rem;
   width: 100%;
+  cursor: pointer;
 }
 .mainCategoryList li em {
   font-size: 0.813rem;
@@ -287,6 +287,10 @@ select {
   height: 51px; /* NavBar의 height와 navbar의 padding top 사이즈를 합쳐서 이게 hover 그림자의 위치인것임*/
   line-height: 51px;
   cursor: pointer;
+  color: inherit;
+}
+.navbar__list > li > a {
+  color: inherit;
 }
 .navbar__list li:hover {
   box-shadow: 0 -2px rgb(211, 211, 211) inset;
@@ -302,7 +306,7 @@ select {
   background: none;
   border: none;
 }
-.SignUpButton {
+#signup_button {
   margin: 0;
   background: none;
   font-size: 14px;
@@ -446,13 +450,6 @@ select {
   width: inherit;
   margin: 0 -10px;
   list-style: none;
-
-  /* font-size: 14px;
-  line-height: 1.42857143;
-  list-style: none;
-  box-sizing: border-box;
-  padding: 0;
-  border: 0; */
 }
 .career_content_list_li {
   display: flex;
@@ -463,39 +460,21 @@ select {
 }
 .content_card {
   text-decoration: inherit;
-
-  /* position: relative; */
-  /* width: 250px; */
-  /* width: calc(25% - 20px); */
   width: inherit;
-  /* height: auto; */
-  /* padding-bottom: 70%; */
   cursor: pointer;
 }
 
 .content_card_img {
-  /* width: inherit;
-  height: auto;
-  padding-left: 0; */
-  /* padding-bottom: 70%; */
   width: 250px;
   height: 175px;
-  /* width: 100%;
-  height: 100%; */
   object-fit: cover;
   border-radius: 4px;
 }
 .content_card_img img {
   vertical-align: middle;
-  /* margin: 0;
-  padding: 0; */
   position: absolute;
-  /* width: 267px; */
   width: inherit;
   height: inherit;
-  /* height: 157px; */
-  /* left: 0;
-  top: 0; */
   border-radius: 4px;
   object-fit: cover;
   object-position: top;
@@ -1154,7 +1133,8 @@ select {
 
 /* 회원가입 모달창 부분 */
 /* 배경 부분으로 하려고 했던 css */
-.signInMalBackground {
+#signinmal_background {
+  /* z-index: 999; */
   display: none;
   position: fixed;
   width: 100%;
@@ -1163,7 +1143,7 @@ select {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-#signin_mal {
+.signInMal {
   width: 25rem;
   border-radius: 5px;
   background-color: #fff;
@@ -1189,7 +1169,7 @@ select {
 .signInMalHead img {
   height: 17px;
 }
-#signin_button {
+#signin_close_button {
   position: absolute;
   /* top: 50%; */
   right: 0;
@@ -1345,4 +1325,54 @@ input::placeholder {
 .signInNextMalBody {
   padding: 20px;
   padding-bottom: 0;
+}
+#signinmal_second {
+  z-index: 3;
+}
+#signin_form > p {
+  margin: 17px 0px 7px;
+  color: rgb(136, 136, 136);
+}
+#signin_form > input {
+  width: 93.6%;
+  height: 50px;
+  min-height: 50px;
+  padding: 0px 12px;
+  background-color: transparent;
+  border: 0.063rem solid #e1e2e3;
+  color: #e1e2e3;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.phoneNumberCountryContainer {
+  height: 50px;
+  min-height: 50px;
+  border-radius: 5px;
+  width: 100%;
+  border: 0.063rem solid #e1e2e3;
+  margin-bottom: 10px;
+}
+/* 여기 수정하기 */
+.phoneNumberCountry {
+  padding-left: 12px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  appearance: none;
+  height: 100%;
+  border: none;
+  background: none;
+  z-index: 1;
+  font-size: 16px;
+  color: var(--theme-palette-colors-gray-900);
+  font-weight: 400;
+}
+.signInMalDownArrow {
+  position: absolute;
+  right: 20px;
+  font-size: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }

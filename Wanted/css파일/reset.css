@@ -172,10 +172,9 @@ a,
 a:active,
 a:hover,
 a:visited {
+  text-decoration: none;
   color: inherit;
-}
-a {
-  text-decoration: inherit;
+  font-size: inherit;
   cursor: pointer;
 }
 

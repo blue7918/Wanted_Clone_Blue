@@ -44,18 +44,47 @@
         <!-- 윗부분 전부 -->
         <div class="navbarMenu">
           <!-- 로고 부분만 -->
-          <button type="button" class="hambergerButton" >
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
-              style="width: 17px; height: 14px; object-fit: contain"
-            />
-          </button>
+          <div class="mainCategoryListPopUp">
+            <button type="button" class="hamberger__button">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
+                style="width: 17px; height: 14px; object-fit: contain"
+              />
+            </button>
+            <!-- hover할 list -->
+            <ul class="mainCategoryList">
+              <li>
+                <em>직군 전체</em>
+              </li>
+              <li>
+                <a href="../html파일/develop.html"><em>개발</em></a>
+              </li>
+              <li><em>경영·비즈니스</em></li>
+              <li><em>마케팅·광고</em></li>
+              <li><em>디자인</em></li>
+              <li><em>영업</em></li>
+              <li><em>고객서비스·리테일</em></li>
+              <li><em>게임 제작</em></li>
+              <li><em>HR</em></li>
+              <li><em>미디어</em></li>
+              <li><em>엔지니어링·설계</em></li>
+              <li><em>금융</em></li>
+              <li><em>제조·생상</em></li>
+              <li><em>물류·무역</em></li>
+              <li><em>의료·제약·바이오</em></li>
+              <li><em>교육</em></li>
+              <li><em>식·음료</em></li>
+              <li><em>법률·법집행기관</em></li>
+              <li><em>건설·시설</em></li>
+              <li><em>공공·복지</em></li>
+            </ul>
+          </div>
           <!-- header 좌측 wanted 글자 -->
           <div class="mainLogo" onclick="location.href='./wanted.html';">Wanted</div>
         </div>
         <!-- header 가운데 글씨 부분 -->
         <ul class="navbarList">
-          <li><a>채용</a></li>
+          <li><a href="../html파일/jobdetail.html">채용</a></li>
           <li><a>이벤트</a></li>
           <li><a>직군별 연봉</a></li>
           <li><a>이력서</a></li>

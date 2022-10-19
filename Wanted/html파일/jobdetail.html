@@ -45,12 +45,41 @@
         <!-- 윗부분 전부 -->
         <div class="navbarMenu">
           <!-- 로고 부분만 -->
-          <button type="button" class="hambergerButton">
-            <img
-              src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
-              style="width: 17px; height: 14px; object-fit: contain"
-            />
-          </button>
+          <div class="mainCategoryListPopUp">
+            <button type="button" class="hamberger__button">
+              <img
+                src="https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Ficon-menu.png&amp;w=undefined&amp;q=75"
+                style="width: 17px; height: 14px; object-fit: contain"
+              />
+            </button>
+            <!-- hover할 list -->
+            <ul class="mainCategoryList">
+              <li>
+                <em>직군 전체</em>
+              </li>
+              <li>
+                <a href="../html파일/develop.html"><em>개발</em></a>
+              </li>
+              <li><em>경영·비즈니스</em></li>
+              <li><em>마케팅·광고</em></li>
+              <li><em>디자인</em></li>
+              <li><em>영업</em></li>
+              <li><em>고객서비스·리테일</em></li>
+              <li><em>게임 제작</em></li>
+              <li><em>HR</em></li>
+              <li><em>미디어</em></li>
+              <li><em>엔지니어링·설계</em></li>
+              <li><em>금융</em></li>
+              <li><em>제조·생상</em></li>
+              <li><em>물류·무역</em></li>
+              <li><em>의료·제약·바이오</em></li>
+              <li><em>교육</em></li>
+              <li><em>식·음료</em></li>
+              <li><em>법률·법집행기관</em></li>
+              <li><em>건설·시설</em></li>
+              <li><em>공공·복지</em></li>
+            </ul>
+          </div>
           <!-- header 좌측 wanted 글자 -->
           <div class="mainLogo" onclick="location.href='./wanted.html';">
             Wanted
@@ -58,7 +87,7 @@
         </div>
         <!-- header 가운데 글씨 부분 -->
         <ul class="navbarList">
-          <li><a>채용</a></li>
+          <li><a href="../html파일/jobdetail.html">채용</a></li>
           <li><a>이벤트</a></li>
           <li><a>직군별 연봉</a></li>
           <li><a>이력서</a></li>
@@ -229,336 +258,336 @@
             </div>
           </section>
         </div>
-        <div class="jobProcessContainer">
-          <div class="jobProcessRewardContainer">
-            <h3>채용보상금</h3>
-            <ul>
-              <li>
-                <h4>추천인</h4>
-                <p>500,000원</p>
-              </li>
-              <li>
-                <h4>지원자</h4>
-                <p>500,000원</p>
-              </li>
-            </ul>
-            <button class="jobProcessShare set_center">
-              <svg
-                xmlns="https://www.w3.org/2000/svg"
-                xmlns:xlink="https://www.w3.org/1999/xlink"
-                width="20"
-                height="20"
-                viewBox="0 0 19 19"
-              >
-                <defs>
-                  <path
-                    id="shareIcon"
-                    d="M5.336 7.75c-.551-.703-1.418-1.136-2.365-1.136C1.337 6.614 0 7.898 0 9.494c0 1.596 1.336 2.879 2.971 2.879.93 0 1.785-.419 2.338-1.102l8.495 4.482c.128.068.276.092.42.068l.025-.004c.213-.036.395-.173.489-.367.101-.21.249-.393.437-.54.673-.526 1.643-.407 2.168.266.526.673.407 1.643-.265 2.167-.673.526-1.643.407-2.168-.266-.226-.29-.644-.34-.933-.115-.29.226-.34.644-.115.933.977 1.251 2.783 1.473 4.034.496 1.25-.976 1.472-2.782.495-4.033-.977-1.251-2.783-1.473-4.033-.496-.169.132-.32.28-.454.442L5.478 9.858c-.322-.241-.816-.145-1 .255-.259.558-.844.93-1.507.93-.913 0-1.642-.7-1.642-1.55 0-.849.73-1.55 1.642-1.55.636 0 1.2.343 1.473.863.107.368.526.64.954.413l9.026-4.762.118-.079.029-.024c.233-.197.303-.527.169-.8-.104-.212-.158-.442-.158-.68 0-.853.692-1.545 1.544-1.545.853 0 1.545.692 1.545 1.544 0 .854-.691 1.545-1.545 1.545-.367 0-.664.297-.664.664 0 .367.297.665.664.665C17.714 5.747 19 4.46 19 2.873 19 1.287 17.713 0 16.126 0c-1.586 0-2.873 1.287-2.873 2.873 0 .224.026.445.076.66L5.336 7.748z"
-                  ></path>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <use fill="#36F" xlink:href="#shareIcon"></use>
-                </g>
-              </svg>
-            </button>
-          </div>
-          <button class="jobProcessBookmarkButton">
+      </div>
+      <div class="jobProcessContainer">
+        <div class="jobProcessRewardContainer">
+          <h3>채용보상금</h3>
+          <ul>
+            <li>
+              <h4>추천인</h4>
+              <p>500,000원</p>
+            </li>
+            <li>
+              <h4>지원자</h4>
+              <p>500,000원</p>
+            </li>
+          </ul>
+          <button class="jobProcessShare set_center">
             <svg
-              width="13"
-              height="17"
-              viewBox="0 0 13 17"
-              style="color: rgb(51, 102, 255)"
+              xmlns="https://www.w3.org/2000/svg"
+              xmlns:xlink="https://www.w3.org/1999/xlink"
+              width="20"
+              height="20"
+              viewBox="0 0 19 19"
             >
               <defs>
                 <path
-                  id="bookmarkIconLine"
-                  d="M1.481 1.481h9.382v10.727c0 .409.331.74.74.74.41 0 .741-.331.741-.74V.74c0-.41-.331-.741-.74-.741H.74C.33 0 0 .332 0 .74v14.814c0 .568.614.925 1.108.643l5.18-2.873 5.104 2.873c.355.203.807.08 1.01-.276.203-.355.08-.808-.275-1.01l-5.471-3.083c-.228-.13-.507-.13-.735 0l-4.44 2.45V1.48z"
+                  id="shareIcon"
+                  d="M5.336 7.75c-.551-.703-1.418-1.136-2.365-1.136C1.337 6.614 0 7.898 0 9.494c0 1.596 1.336 2.879 2.971 2.879.93 0 1.785-.419 2.338-1.102l8.495 4.482c.128.068.276.092.42.068l.025-.004c.213-.036.395-.173.489-.367.101-.21.249-.393.437-.54.673-.526 1.643-.407 2.168.266.526.673.407 1.643-.265 2.167-.673.526-1.643.407-2.168-.266-.226-.29-.644-.34-.933-.115-.29.226-.34.644-.115.933.977 1.251 2.783 1.473 4.034.496 1.25-.976 1.472-2.782.495-4.033-.977-1.251-2.783-1.473-4.033-.496-.169.132-.32.28-.454.442L5.478 9.858c-.322-.241-.816-.145-1 .255-.259.558-.844.93-1.507.93-.913 0-1.642-.7-1.642-1.55 0-.849.73-1.55 1.642-1.55.636 0 1.2.343 1.473.863.107.368.526.64.954.413l9.026-4.762.118-.079.029-.024c.233-.197.303-.527.169-.8-.104-.212-.158-.442-.158-.68 0-.853.692-1.545 1.544-1.545.853 0 1.545.692 1.545 1.544 0 .854-.691 1.545-1.545 1.545-.367 0-.664.297-.664.664 0 .367.297.665.664.665C17.714 5.747 19 4.46 19 2.873 19 1.287 17.713 0 16.126 0c-1.586 0-2.873 1.287-2.873 2.873 0 .224.026.445.076.66L5.336 7.748z"
                 ></path>
               </defs>
               <g fill="none" fill-rule="evenodd">
-                <use fill="currentColor" xlink:href="#bookmarkIconLine"></use>
+                <use fill="#36F" xlink:href="#shareIcon"></use>
               </g>
             </svg>
-            북마크하기
           </button>
-          <button class="jobProcessApplyButton">지원하기</button>
-          <div class="jobProcessReactions">
-            <button type="button" class="jobProcessReactionsLike">
-              <i class="fa-sharp fa-solid fa-heart"></i>
-              <span>9</span>
-            </button>
-            <button type="button" class="jobProcessReactionsAvatar">
-              <ul>
-                <li
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/a/AATXAJyptvBO9pOC55mAwO0IA3-llT_OIJ3QyPcS1-DN=s96-c'),
-                      url('https://static.wanted.co.kr/images/userweb/profile_default.png');
-                  "
-                ></li>
-                <li
-                  style="
-                    background-image: url('https://k.kakaocdn.net/dn/chOGWm/btrJ7se3l3K/eeQiZuGgc7rBHKj9RBRFk1/img_110x110.jpg'),
-                      url('https://static.wanted.co.kr/images/userweb/profile_default.png');
-                  "
-                ></li>
-                <li
-                  style="
-                    background-image: url('https://lh3.googleusercontent.com/a/ALm5wu2bYv18aK6_ahAXODnanhRHwCfEqvoUbqKJCBKA=s96-c'),
-                      url('https://static.wanted.co.kr/images/userweb/profile_default.png');
-                  "
-                ></li>
-              </ul>
-            </button>
-          </div>
+        </div>
+        <button class="jobProcessBookmarkButton">
+          <svg
+            width="13"
+            height="17"
+            viewBox="0 0 13 17"
+            style="color: rgb(51, 102, 255)"
+          >
+            <defs>
+              <path
+                id="bookmarkIconLine"
+                d="M1.481 1.481h9.382v10.727c0 .409.331.74.74.74.41 0 .741-.331.741-.74V.74c0-.41-.331-.741-.74-.741H.74C.33 0 0 .332 0 .74v14.814c0 .568.614.925 1.108.643l5.18-2.873 5.104 2.873c.355.203.807.08 1.01-.276.203-.355.08-.808-.275-1.01l-5.471-3.083c-.228-.13-.507-.13-.735 0l-4.44 2.45V1.48z"
+              ></path>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <use fill="currentColor" xlink:href="#bookmarkIconLine"></use>
+            </g>
+          </svg>
+          북마크하기
+        </button>
+        <button class="jobProcessApplyButton">지원하기</button>
+        <div class="jobProcessReactions">
+          <button type="button" class="jobProcessReactionsLike">
+            <i class="fa-sharp fa-solid fa-heart"></i>
+            <span>9</span>
+          </button>
+          <button type="button" class="jobProcessReactionsAvatar">
+            <ul>
+              <li
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/a/AATXAJyptvBO9pOC55mAwO0IA3-llT_OIJ3QyPcS1-DN=s96-c'),
+                    url('https://static.wanted.co.kr/images/userweb/profile_default.png');
+                "
+              ></li>
+              <li
+                style="
+                  background-image: url('https://k.kakaocdn.net/dn/chOGWm/btrJ7se3l3K/eeQiZuGgc7rBHKj9RBRFk1/img_110x110.jpg'),
+                    url('https://static.wanted.co.kr/images/userweb/profile_default.png');
+                "
+              ></li>
+              <li
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/a/ALm5wu2bYv18aK6_ahAXODnanhRHwCfEqvoUbqKJCBKA=s96-c'),
+                    url('https://static.wanted.co.kr/images/userweb/profile_default.png');
+                "
+              ></li>
+            </ul>
+          </button>
         </div>
       </div>
-      <!-- 밑 리스트 부분 -->
-      <div class="jobAssociated">
-        <h5 class="jobAssociatedTitle">이 포지션을 찾고 계셨나요?</h5>
-        <ul class="jobListItemContainer">
-          <li class="jobListItem">
-            <header
-            style="
-              background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
-              "
-            >
-              <button
-                class="bookmarkButton"
-                type="button"
-                aria-label="bookmark button"
-              >
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="https://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
-                    fill="black"
-                    fill-opacity="0.25"
-                  ></path>
-                </svg>
-              </button>
-            </header>
-            <div class="jobListItemBody">
-              <div class="jobListItemPosition">
-                스마트컨트랙트 개발자 (Golang)
-              </div>
-              <div class="jobListItemName">온블록</div>
-              <button class="jobListItemTipLabel" type="button">
-                <div class="TipLabelVeryHigh">
-                  <span>응답률 매우 높음</span>
-                </div>
-                <div class="jobListItemTipContent">
-                  지원 후 응답받을 확률이 95% 이상입니다.
-                </div>
-              </button>
-              <div class="jobListItemCompanyLocation">
-                서울
-                <span class="jobListItemDot">.</span>
-                <span>한국</span>
-              </div>
-              <div class="jobListItemReward">채용보상금 1,000,000원</div>
-            </div>
-          </li>
-          <li class="jobListItem">
-            <header
-            style="
-            background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2096%2Fjwkbhn0azdeqfolu__400_400.jpg&w=400&q=75);
-              "
-            >
-              <button
-                class="bookmarkButton"
-                type="button"
-                aria-label="bookmark button"
-              >
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="https://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
-                    fill="black"
-                    fill-opacity="0.25"
-                  ></path>
-                </svg>
-              </button>
-            </header>
-            <div class="jobListItemBody">
-              <div class="jobListItemPosition">
-                [HUB팀] 백엔드 엔지니어 팀장
-              </div>
-              <div class="jobListItemName">발란(BALAAN)</div>
-              <div class="jobListItemCompanyLocation">
-                서울
-                <span class="jobListItemDot">.</span>
-                <span>한국</span>
-              </div>
-              <div class="jobListItemReward">채용보상금 1,000,000원</div>
-            </div>
-          </li>
-          <li class="jobListItem">
-            <header
-            style="
-            background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29361%2Ff5rjiprodre6emh8__400_400.jpg&w=400&q=75);
-              "
-            >
-              <button
-                class="bookmarkButton"
-                type="button"
-                aria-label="bookmark button"
-              >
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="https://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
-                    fill="black"
-                    fill-opacity="0.25"
-                  ></path>
-                </svg>
-              </button>
-            </header>
-            <div class="jobListItemBody">
-              <div class="jobListItemPosition">
-                Backend Java 개발자 및 Linux 오픈소스 엔지니어
-              </div>
-              <div class="jobListItemName">서원정보</div>
-              <div class="jobListItemCompanyLocation">
-                서울
-                <span class="jobListItemDot">.</span>
-                <span>한국</span>
-              </div>
-              <div class="jobListItemReward">채용보상금 1,000,000원</div>
-            </div>
-          </li>
-          <li class="jobListItem">
-            <header
-            style="
-            background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F27759%2Fccuk5lonkfq5a9oo__400_400.jpg&w=400&q=75);
+    </div>
+    <!-- 밑 리스트 부분 -->
+    <div class="jobAssociated set_mwidth">
+      <h5 class="jobAssociatedTitle">이 포지션을 찾고 계셨나요?</h5>
+      <ul class="jobListItemContainer">
+        <li class="jobListItem">
+          <header
+          style="
+            background-image: url('https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F32837%2Fr17way7wkbn07mxm__400_400.jpg&amp;w=400&amp;q=75');
             "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
             >
-              <button
-                class="bookmarkButton"
-                type="button"
-                aria-label="bookmark button"
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
               >
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="https://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
-                    fill="black"
-                    fill-opacity="0.25"
-                  ></path>
-                </svg>
-              </button>
-            </header>
-            <div class="jobListItemBody">
-              <div class="jobListItemPosition">
-                프론트엔드개발팀(전사IT개발 Front-end)
-              </div>
-              <div class="jobListItemName">코웨이</div>
-              <button class="jobListItemTipLabel" type="button">
-                <div class="TipLabelVeryHigh">
-                  <span>응답률 매우 높음</span>
-                </div>
-                <div class="jobListItemTipContent">
-                  지원 후 응답받을 확률이 95% 이상입니다.
-                </div>
-              </button>
-              <div class="jobListItemCompanyLocation">
-                서울
-                <span class="jobListItemDot">.</span>
-                <span>한국</span>
-              </div>
-              <div class="jobListItemReward">채용보상금 1,000,000원</div>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              스마트컨트랙트 개발자 (Golang)
             </div>
-          </li>
-          <li class="jobListItem">
-            <header
-            style="
-            background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15171%2F1zy1gryaaqalxpq9__400_400.jpg&w=400&q=75);
-              "
+            <div class="jobListItemName">온블록</div>
+            <button class="jobListItemTipLabel" type="button">
+              <div class="TipLabelVeryHigh">
+                <span>응답률 매우 높음</span>
+              </div>
+              <div class="jobListItemTipContent">
+                지원 후 응답받을 확률이 95% 이상입니다.
+              </div>
+            </button>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+          background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F2096%2Fjwkbhn0azdeqfolu__400_400.jpg&w=400&q=75);
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
             >
-              <button
-                class="bookmarkButton"
-                type="button"
-                aria-label="bookmark button"
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
               >
-                <svg
-                  width="22"
-                  height="22"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="https://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
-                    fill="white"
-                  ></path>
-                  <path
-                    d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
-                    fill="black"
-                    fill-opacity="0.25"
-                  ></path>
-                </svg>
-              </button>
-            </header>
-            <div class="jobListItemBody">
-              <div class="jobListItemPosition">
-                프론트엔드 개발
-              </div>
-              <div class="jobListItemName">버블콘</div>
-              <div class="jobListItemCompanyLocation">
-                서울
-                <span class="jobListItemDot">.</span>
-                <span>한국</span>
-              </div>
-              <div class="jobListItemReward">채용보상금 1,000,000원</div>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              [HUB팀] 백엔드 엔지니어 팀장
             </div>
-          </li>
-        </ul>
-      </div>
+            <div class="jobListItemName">발란(BALAAN)</div>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+          background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F29361%2Ff5rjiprodre6emh8__400_400.jpg&w=400&q=75);
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              Backend Java 개발자 및 Linux 오픈소스 엔지니어
+            </div>
+            <div class="jobListItemName">서원정보</div>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+          background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F27759%2Fccuk5lonkfq5a9oo__400_400.jpg&w=400&q=75);
+          "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              프론트엔드개발팀(전사IT개발 Front-end)
+            </div>
+            <div class="jobListItemName">코웨이</div>
+            <button class="jobListItemTipLabel" type="button">
+              <div class="TipLabelVeryHigh">
+                <span>응답률 매우 높음</span>
+              </div>
+              <div class="jobListItemTipContent">
+                지원 후 응답받을 확률이 95% 이상입니다.
+              </div>
+            </button>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+        <li class="jobListItem">
+          <header
+          style="
+          background-image: url(https://image.wanted.co.kr/optimize?src=https%3A%2F%2Fstatic.wanted.co.kr%2Fimages%2Fcompany%2F15171%2F1zy1gryaaqalxpq9__400_400.jpg&w=400&q=75);
+            "
+          >
+            <button
+              class="bookmarkButton"
+              type="button"
+              aria-label="bookmark button"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 18 18"
+                fill="none"
+                xmlns="https://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.58065 1C3.25997 1 3 1.26206 3 1.58533V16.4138C3 16.8632 3.48164 17.145 3.86873 16.922L9.00004 13.9662L14.1313 16.922C14.5184 17.145 15 16.8632 15 16.4138V1.58533C15 1.26206 14.74 1 14.4194 1H9.00004H3.58065ZM8.71195 12.7838C8.89046 12.681 9.10961 12.681 9.28812 12.7838L13.8387 15.4052V2.17067H9.00004H4.1613V15.4052L8.71195 12.7838Z"
+                  fill="white"
+                ></path>
+                <path
+                  d="M9.28812 12.7838C9.10961 12.681 8.89046 12.681 8.71195 12.7838L4.1613 15.4052V2.17067H9.00004H13.8387V15.4052L9.28812 12.7838Z"
+                  fill="black"
+                  fill-opacity="0.25"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <div class="jobListItemBody">
+            <div class="jobListItemPosition">
+              프론트엔드 개발
+            </div>
+            <div class="jobListItemName">버블콘</div>
+            <div class="jobListItemCompanyLocation">
+              서울
+              <span class="jobListItemDot">.</span>
+              <span>한국</span>
+            </div>
+            <div class="jobListItemReward">채용보상금 1,000,000원</div>
+          </div>
+        </li>
+      </ul>
     </div>
     <!-- 푸터 부분 -->
     <footer class="FooterNavlink">

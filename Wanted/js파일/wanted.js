@@ -1,9 +1,16 @@
-let signin_button = document.getElementById('signin_button');
-signin_button.addEventListener('click', function () {
-  signin_mal.style.display = 'none';
+const signin_close_button = document.getElementById('signin_close_button');
+const signup_button = document.getElementById('signup_button');
+const signinmal_background = document.getElementById('signinmal_background');
+
+signup_button.addEventListener('click', function () {
+  signinmal_background.style.display = 'block';
 });
 
-let userid = document.querySelector('#email');
+signin_close_button.addEventListener('click', function () {
+  signinmal_background.style.display = 'none';
+});
+
+const userid = document.querySelector('#email');
 userid.addEventListener('change', (e) => {
   // html 의 onchange="validEmail(this)"와 동일
   validEmail(e.target);
