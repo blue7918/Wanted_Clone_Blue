@@ -17,6 +17,9 @@
   display: flex;
   align-items: center;
 }
+.seeMoreContainer > div > i {
+  font-family: FontAwesome;
+}
 .seeMoreText {
   margin-right: auto;
   text-align: left;

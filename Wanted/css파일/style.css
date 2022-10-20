@@ -209,6 +209,8 @@ select {
 .mainCategoryList {
   display: none;
   position: absolute;
+  top: 49.75px;
+  left: -15px;
   border-left: 0.063rem solid #f7f9fa;
   border-right: 0.063rem solid #f7f9fa;
   height: calc(100vh - 3.125rem);
@@ -252,6 +254,15 @@ select {
   outline: none;
   cursor: pointer;
   position: relative;
+}
+.hamberger__button > img {
+  width: 17px;
+  height: 14px;
+}
+.mainCategoryListPopUp {
+  height: 50px;
+  position: relative;
+  cursor: pointer;
 }
 .mainCategoryListPopUp:hover .mainCategoryList {
   display: block;
@@ -1135,7 +1146,7 @@ select {
 /* 배경 부분으로 하려고 했던 css */
 #signinmal_background {
   /* z-index: 999; */
-  display: none;
+  /* display: none; 이 부분 수정하기*/
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1182,6 +1193,8 @@ select {
 .signInMalBody {
   background-color: #fff;
   padding: 1.25rem;
+  overflow: auto;
+  height: calc(100vh - 9.375rem -22px);
 }
 .signInMalBodyTextPanel {
   text-align: center;
@@ -1328,6 +1341,7 @@ input::placeholder {
 }
 #signinmal_second {
   z-index: 3;
+  max-width: 400px;
 }
 #signin_form > p {
   margin: 17px 0px 7px;
@@ -1353,8 +1367,8 @@ input::placeholder {
   width: 100%;
   border: 0.063rem solid #e1e2e3;
   margin-bottom: 10px;
+  position: relative;
 }
-/* 여기 수정하기 */
 .phoneNumberCountry {
   padding-left: 12px;
   width: 100%;
@@ -1364,9 +1378,8 @@ input::placeholder {
   height: 100%;
   border: none;
   background: none;
-  z-index: 1;
   font-size: 16px;
-  color: var(--theme-palette-colors-gray-900);
+  color: #333;
   font-weight: 400;
 }
 .signInMalDownArrow {
@@ -1375,4 +1388,125 @@ input::placeholder {
   font-size: 10px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
+}
+.phoneNumber {
+  display: flex;
+  flex-direction: row;
+}
+.phoneNumberExample {
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  padding: 0px 12px;
+  outline: none;
+  background-color: transparent;
+  border: 0.063rem solid #e1e2e3;
+  color: #e1e2e3;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.phoneNumberButton {
+  height: 50px;
+  width: auto;
+  flex: 0 0 auto;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  padding: 0px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: rgb(242, 244, 247);
+  /* color: rgb(204, 204, 204); */
+  color: #ccc;
+}
+.phoneNumberVerification {
+  width: 100%;
+  height: 50px;
+  padding: 0px 12px;
+  background-color: #f2f4f7;
+  border: 0.063rem solid #e1e2e3;
+  color: #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.passwordDetail {
+  color: #888;
+  text-align: left;
+  letter-spacing: 0.0192em;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.checkBoxBox1 {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  min-height: 25px;
+  width: 100%;
+  margin: 28px 0px 10px;
+}
+.checkBox {
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  border-radius: 3px;
+  border: 0.063rem solid #ececec;
+}
+.checkBoxAllowAll {
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+  font-size: 15px;
+  line-height: 22px;
+  margin-left: 7px;
+}
+.checkBoxBox2 {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  min-height: 25px;
+  width: 100%;
+  margin: 10px 0px;
+}
+.checkBoxBox2InnerBox {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 0%;
+}
+.checkBoxBox2 > p,
+.checkBoxBox2 > div > p {
+  color: #888;
+  font-weight: 500;
+  text-align: left;
+  font-size: 15px;
+  line-height: 22px;
+  margin-left: 7px;
+}
+#signinmal_second_signin_button {
+  width: 100%;
+  height: 50px;
+  min-height: 50px;
+  border-radius: 25px;
+  font-size: 16px;
+  margin: 30px 0 10px 0;
+  border: none;
+  color: #ccc;
+  background-color: #f2f4f7;
 }
