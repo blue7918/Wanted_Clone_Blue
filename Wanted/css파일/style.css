@@ -1146,7 +1146,7 @@ select {
 /* 배경 부분으로 하려고 했던 css */
 #signinmal_background {
   /* z-index: 999; */
-  /* display: none; 이 부분 수정하기*/
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -1162,8 +1162,7 @@ select {
   top: 50%;
   left: 50%;
   overflow: hidden;
-  max-width: 31.25rem;
-  max-height: calc(100vh - 9.375rem);
+  height: calc(100vh - 9.3rem);
   transform: translate(-50%, -50%);
 }
 .signInMalHead {
@@ -1180,7 +1179,17 @@ select {
 .signInMalHead img {
   height: 17px;
 }
-#signin_close_button {
+#signin_close_button1 {
+  position: absolute;
+  /* top: 50%; */
+  right: 0;
+  top: 0;
+  padding: 15px;
+  line-height: 0;
+  background-color: #fff;
+  border: none;
+}
+#signin_close_button2 {
   position: absolute;
   /* top: 50%; */
   right: 0;
@@ -1194,7 +1203,15 @@ select {
   background-color: #fff;
   padding: 1.25rem;
   overflow: auto;
-  height: calc(100vh - 9.375rem -22px);
+  width: 90%;
+  height: 633px;
+}
+.signInMalBody2 {
+  background-color: #fff;
+  padding: 1.25rem;
+  overflow: auto;
+  width: 90%;
+  height: 500px;
 }
 .signInMalBodyTextPanel {
   text-align: center;
@@ -1238,13 +1255,22 @@ select {
   border: 0.063rem solid #e1e2e3;
   background-color: #fff;
   font-size: 0.938rem;
-  color: #e1e2e3;
 }
 input::placeholder {
   color: rgb(177, 170, 180);
   font-size: 0.938rem;
 }
-.InputPanelButtonContainer {
+#write_right_address {
+  display: none;
+  color: #fe415c;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.0192rem;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 8px 0 8px 0;
+}
+#input_panel_button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1256,14 +1282,14 @@ input::placeholder {
   color: #fff;
   cursor: pointer;
 }
-.InputPanelButtonContainer input {
+#input_panel_button input {
   border: none;
   background-color: inherit;
   color: inherit;
   font-size: 1rem;
   font-weight: 600;
 }
-.InputPanelButtonContainer input[type='submit'] {
+#input_panel_button input[type='submit'] {
   font-family: FontAwesome;
 }
 .InputPanelOrSocial {
@@ -1340,8 +1366,8 @@ input::placeholder {
   padding-bottom: 0;
 }
 #signinmal_second {
-  z-index: 3;
   max-width: 400px;
+  display: none;
 }
 #signin_form > p {
   margin: 17px 0px 7px;
@@ -1455,6 +1481,16 @@ input::placeholder {
   width: 100%;
   margin: 28px 0px 10px;
 }
+input[id='checkbox_all'] {
+  border: 0.063rem solid #ececec;
+  width: 18px;
+  height: 18px;
+}
+input[name='check'] {
+  border: 0.063rem solid #ececec;
+  width: 18px;
+  height: 18px;
+}
 .checkBox {
   width: 18px;
   height: 18px;
@@ -1500,12 +1536,12 @@ input::placeholder {
   margin-left: 7px;
 }
 #signinmal_second_signin_button {
-  width: 100%;
+  width: 89%;
   height: 50px;
   min-height: 50px;
   border-radius: 25px;
   font-size: 16px;
-  margin: 30px 0 10px 0;
+  margin: 15px 0 20px 0;
   border: none;
   color: #ccc;
   background-color: #f2f4f7;
