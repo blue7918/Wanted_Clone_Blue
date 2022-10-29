@@ -944,13 +944,13 @@ select {
 .check_icon {
   margin: 3px 2px 0 -1px;
 }
-.sub_img {
-  /* align-self: auto;
+/* .sub_img {
+  align-self: auto;
   flex-wrap: nowrap;
   align-items: flex-start;
   justify-items: flex-start;
-  flex-direction: row; */
-}
+  flex-direction: row; 
+} */
 
 /* -- 채용정보 -- */
 .RecruitMenu {
